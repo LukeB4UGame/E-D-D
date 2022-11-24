@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       E-D&D
+    </title>
+<link rel="icon" type="image/gif/png" href="favicon.ico">
+<style>
+.container{
+  height: 200px;
+}
+.button_css {
+  background-image: linear-gradient(#C58A50, #A8534B);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 32px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: button;
+  color: black;
+}
+.button_css2 {border-radius: 50%}
+@font-face {
+   font-family: button;
+   src: url(FortDeath-3ne6.ttf);
+}
+body{
+  text-align: center;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bleft {
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bleft2 {
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.tleft {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 93%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.dropbtn {
+  border-radius: 50%;
+  background-image: linear-gradient(#C58A50, #A8534B);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 32px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: button;
+  color: black;
+}
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropup-content a:hover {background-color: #ddd}
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+.itembox {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<script>
+let x = Math.floor((Math.random() * 100) + 1);
+document.getElementById("demo").innerHTML = x;
+function create() {
+  var box = document.createElement("div");
+  box.setAttribute('class', 'itembox');
+  box.setAttribute('id', 'itemBox');
+  var holder = document.createElement("p");
+  holder.setAttribute('id', 'output');
+  var item = document.createTextNode(id="demo"c);
+  holder.appendChild(item);
+  box.appendChild(holder);
+  var mainholder = document.getElementsByClassName("trades")[0];
+  mainholder.appendChild(box);
+      }
+</script>
+<body style="background-color:#fff3d4;">
+<div class="container">
+  <div class="center">
+	<input type="button" value="Character Viewer" class="button_css" onclick="location.href='CV.html'">
+	<input type="button" value="Campaign Viewer" class="button_css" onclick="location.href='CamV.html'">
+	<input type="button" value="Character Creator" class="button_css" onclick="location.href='CC.html'">
+  </div>
+  <div class="bleft">
+	<input type="button" value="?" class="button_css button_css2" onclick="location.href='CV.html'">
+  </div>
+  <div class="tleft">
+	<input type="button" value="Sign Up" class="button_css" onclick="location.href='CV.html'">
+  </div>
+  <div class="bleft2">
+ <div class="dropup">
+  <button class="dropbtn">D</button>
+  <div class="dropup-content">
+    <button onclick = "create()">D100</button>
+    <a href="#">D20</a>
+    <a href="#">D12</a>
+    <a href="#">D10</a>
+    <a href="#">D8</a>
+    <a href="#">D6</a>
+    <a href="#">D4</a>
+  </div>
+</div>
+</div>
+</body>
+</html>
