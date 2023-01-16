@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       E-D&D
+    </title>
+<link rel="icon" type="image/gif/png" href="favicon.ico">
+<style>
+</style>
+</head>
+<body>
+<body style="background-color:#706080;">
+</body>
